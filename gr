@@ -1,0 +1,15 @@
+#include iostream
+
+int main() {
+    Double R,E,S;
+    std::cout << "Enter row length (feet): ";
+    std::cin >> R;
+    std::cout << "Enter end-post assembly length (feet): ";
+    std::cin >> E;
+    std::cout << "Enter space between vines (feet): ";
+    std::cin >> S;
+    // calculate the number of vines
+    int N = (R - 2 * E) / S + 1;
+    std::cout << "Number of vines: " << N << std::endl;
+    return 0;   
+}
